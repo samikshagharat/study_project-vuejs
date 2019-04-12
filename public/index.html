@@ -1,17 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <title>devc</title>
-  </head>
-  <body>
-    <noscript>
-      <strong>We're sorry but devc doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
-    </noscript>
-    <div id="app"></div>
-    <!-- built files will be auto injected -->
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+  <title>devc</title>
+</head>
+
+<body>
+  <noscript>
+    <strong>We're sorry but devc doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+  </noscript>
+  <div id="app"></div>
+  <!-- built files will be auto injected -->
+</body>
+
 </html>
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+<meta name="google-signin-client_id" content="32338731970-j6c5jupc19qd3ep9ic6r7isd30cqi8oq.apps.googleusercontent.com">
+
+<script src="https://www.gstatic.com/firebasejs/5.9.3/firebase.js"></script>
+<script>
+  // import * as firebase from 'firebase';
+  // Initialize Firebase
+  export const firebaseConfig = {
+    dev={
+      apiKey: "AIzaSyAze8j_Iyo0CYY-B0zI4HHaeLCqIjjRnYw",
+      authDomain: "devc-df8c6.firebaseapp.com",
+      databaseURL: "npm run servenpm",
+      projectId: "devc-df8c6",
+      storageBucket: "devc-df8c6.appspot.com",
+      messagingSenderId: "302278024015"
+    },
+
+  };
+  firebase.initializeApp(firebaseConfig);
+
+  var db = firebase.firestore();
+
+
+</script>
